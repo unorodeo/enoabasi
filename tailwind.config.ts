@@ -12,6 +12,7 @@ const config: Config = {
 			fontFamily: {
 				"geist-sans": "var(--font-geist-sans)",
 				"geist-mono": "var(--font-geist-mono)",
+				calistoga: "var(--font-calistoga)",
 			},
 			borderRadius: {
 				lg: "var(--radius)",
@@ -37,6 +38,10 @@ const config: Config = {
 					DEFAULT: "hsl(var(--secondary))",
 					foreground: "hsl(var(--secondary-foreground))",
 				},
+				tertiary: {
+					DEFAULT: "hsl(var(--tertiary))",
+					foreground: "hsl(var(--tertiary-foreground))",
+				},
 				muted: {
 					DEFAULT: "hsl(var(--muted))",
 					foreground: "hsl(var(--muted-foreground))",
@@ -52,13 +57,6 @@ const config: Config = {
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",
 				ring: "hsl(var(--ring))",
-				chart: {
-					"1": "hsl(var(--chart-1))",
-					"2": "hsl(var(--chart-2))",
-					"3": "hsl(var(--chart-3))",
-					"4": "hsl(var(--chart-4))",
-					"5": "hsl(var(--chart-5))",
-				},
 			},
 		},
 	},

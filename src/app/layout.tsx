@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 
-import { geistMono, geistSans } from "@/lib/fonts";
+import { calistoga, geistMono, geistSans } from "@/lib/fonts";
 
 import type { Metadata } from "next";
 import { Providers } from "@/components/providers";
@@ -25,7 +25,8 @@ export default function RootLayout({
 				className={cn(
 					"antialiased font-geist-sans",
 					geistSans.variable,
-					geistMono.variable
+					geistMono.variable,
+					calistoga.variable
 				)}
 			>
 				<Providers>{children}</Providers>
