@@ -1,6 +1,10 @@
 import "@/styles/globals.css";
 
+import { geistMono, geistSans } from "@/lib/fonts";
+
 import type { Metadata } from "next";
+import { Providers } from "@/components/providers";
+import { cn } from "@/lib/cn";
 
 export const metadata: Metadata = {
 	title: "Enoabasi",
@@ -13,8 +17,20 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body>{children}</body>
+		<html
+			lang="en"
+			suppressHydrationWarning
+		>
+			<body
+				className={cn(
+					"antialiased font-geist-sans",
+					geistSans.variable,
+					geistMono.variable
+				)}
+			>
+				<Providers>{children}</Providers>
+			</body>
 		</html>
 	);
 }
+
