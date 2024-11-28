@@ -1,10 +1,38 @@
+import { CarIcon, MusicIcon, SwatchBookIcon, TreesIcon } from "lucide-react";
+
 import { Section } from "@/components/ui/section";
 
 export default function Home() {
 	return (
 		<>
 			<Section>
-				<h1>Welcome</h1>
+				<div className="md:w-4/6">
+					<p>I am a software developer and maker based in Abuja.</p>
+					<p>
+						My journey spans crafting software that is not only profitable but
+						contributes to society. I use software as a means of solving
+						problems in the digital and real world.
+					</p>
+					<p>
+						When I am not tinkering on my computer I enjoy site seeing around
+						Abuja
+						<span className="inline-flex items-baseline justify-center mx-1">
+							<TreesIcon className="size-4 text-muted-foreground" />
+						</span>
+						, Catching up on the car space
+						<span className="inline-flex items-baseline justify-center mx-1">
+							<CarIcon className="size-4 text-muted-foreground" />
+						</span>
+						, Art explorations
+						<span className="inline-flex items-baseline justify-center mx-1">
+							<SwatchBookIcon className="size-4 text-muted-foreground" />
+						</span>
+						, and Music
+						<span className="inline-flex items-baseline justify-center mx-1">
+							<MusicIcon className="size-4 text-muted-foreground" />
+						</span>
+					</p>
+				</div>
 			</Section>
 		</>
 	);
