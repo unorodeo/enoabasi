@@ -7,7 +7,7 @@ import { Providers } from "@/components/providers";
 import { cn } from "@/lib/cn";
 
 export const metadata: Metadata = {
-	title: "Enoabasi",
+	title: "Enoabasi | The playground of Enoabasi Essien.",
 	description: "The playground of Enoabasi Essien.",
 };
 
