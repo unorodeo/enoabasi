@@ -1,6 +1,6 @@
 export const siteConfig = {
 	url: "https://enoabasi.vercel.app",
-	name: "AABEINOS",
+	name: { fn: "AABEINOS", ln: "EEINSS" },
 	author: "Enoabasi",
 	socials: {
 		instagram: "https://",
