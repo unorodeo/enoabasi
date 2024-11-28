@@ -24,6 +24,15 @@ export default function RootLayout({
 			<body
 				className={cn(
 					"antialiased font-geist-sans",
+					// selections
+					"selection:bg-tertiary selection:text-tertiary-foreground",
+					// custom scrollbar
+					"[&::-webkit-scrollbar]:w-2",
+					"[&::-webkit-scrollbar-track]:bg-muted",
+					"[&::-webkit-scrollbar-thumb]:bg-muted-foreground",
+					"[&::-webkit-scrollbar-thumb]:border-2",
+					"[&::-webkit-scrollbar-thumb]:border-primary",
+					"[&::-webkit-scrollbar-thumb]:rounded-lg",
 					geistSans.variable,
 					geistMono.variable,
 					calistoga.variable
