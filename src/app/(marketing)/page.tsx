@@ -1,5 +1,12 @@
-import { CarIcon, MusicIcon, SwatchBookIcon, TreesIcon } from "lucide-react";
+import {
+	CarIcon,
+	MusicIcon,
+	PackageCheckIcon,
+	SwatchBookIcon,
+	TreesIcon,
+} from "lucide-react";
 
+import { HR } from "@/components/ui/hr";
 import { Section } from "@/components/ui/section";
 
 export default function Home() {
@@ -7,7 +14,10 @@ export default function Home() {
 		<>
 			<Section>
 				<div className="md:w-4/6">
-					<p>I am a software developer and maker based in Abuja.</p>
+					<p>
+						I am a software developer and maker based in Abuja with +6 years of
+						experience.
+					</p>
 					<p>
 						My journey spans crafting software that is not only profitable but
 						contributes to society. I use software as a means of solving
@@ -27,13 +37,26 @@ export default function Home() {
 						<span className="inline-flex items-baseline justify-center mx-1">
 							<SwatchBookIcon className="size-4 text-muted-foreground" />
 						</span>
-						, and Music
+						,Music
 						<span className="inline-flex items-baseline justify-center mx-1">
 							<MusicIcon className="size-4 text-muted-foreground" />
 						</span>
+						, and building open-source software
+						<span className="inline-flex items-baseline justify-center mx-1">
+							<PackageCheckIcon className="size-4 text-muted-foreground" />
+						</span>
+						.
 					</p>
 				</div>
 			</Section>
+			<Section>
+				<HR>Projects</HR>
+			</Section>
+			<Section>Projects cards</Section>
+			<Section>
+				<HR>Experiences</HR>
+			</Section>
+			<Section>Experience timeline</Section>
 		</>
 	);
 }
