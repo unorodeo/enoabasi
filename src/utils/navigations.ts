@@ -2,10 +2,6 @@ import type { Navitem } from "@/types/globals";
 
 export const HEADER_NAVS: Navitem[] = [
 	{
-		href: "/projects",
-		label: "Projects",
-	},
-	{
 		href: "/journal",
 		label: "Journal",
 	},
