@@ -5,7 +5,7 @@ export default function UI() {
 	return (
 		<>
 			<Section>
-				<h1>User interface of {siteConfig.name}</h1>
+				<h1>User interface of {siteConfig.name.fn}</h1>
 			</Section>
 		</>
 	);
