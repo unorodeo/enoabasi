@@ -1,10 +1,10 @@
 import { Section } from "@/components/ui/section";
 import { UnderConstruction } from "@/components/under-construction";
 
-export default function UI() {
+export default function Journal() {
   return (
     <>
-      <Section>
+      <Section className="grid place-items-center min-h-[20rem]">
         <UnderConstruction />
       </Section>
     </>
