@@ -8,6 +8,7 @@ import {
 
 import { Experiences } from "@/components/experience";
 import { HR } from "@/components/ui/hr";
+import { Projects } from "@/components/project";
 import { Section } from "@/components/ui/section";
 
 export default function Home() {
@@ -53,7 +54,11 @@ export default function Home() {
       <Section>
         <HR>Projects</HR>
       </Section>
-      <Section>Projects cards</Section>
+      <Section>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Projects />
+        </div>
+      </Section>
       <Section>
         <HR>Experiences</HR>
       </Section>
