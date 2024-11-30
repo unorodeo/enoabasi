@@ -107,3 +107,9 @@
 	}
 }
 
+@layer utilities {
+  .no-uppercase {
+    text-transform: none;
+  }
+}
+
