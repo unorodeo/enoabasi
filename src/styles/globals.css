@@ -67,11 +67,11 @@
 	}
 
 	h1 {
-		@apply scroll-m-20 text-4xl font-extrabold lg:text-5xl font-calistoga;
+		@apply scroll-m-20 text-4xl font-extrabold lg:text-5xl;
 	}
 
 	h2 {
-		@apply scroll-m-20 pb-2 text-3xl font-semibold first:mt-0 font-calistoga;
+		@apply scroll-m-20 pb-2 text-3xl font-semibold first:mt-0;
 	}
 
 	h3 {
