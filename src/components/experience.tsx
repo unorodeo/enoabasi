@@ -10,7 +10,7 @@ const EXPERIENCE_ITEMS: ExperienceItem[] = [
     id: "6d31da73-591c-46da-b6c5-3f589c042b6d",
     period: "2022 - Present",
     position: "Founder",
-    company: "Nobasi Softwares",
+    company: "Nobasi Software",
     description:
       "Started a company to build softwares that contributed to society. Developing solutions for public and private administrations using advanced technologies and best practices.",
   },
