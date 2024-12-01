@@ -18,23 +18,22 @@ const PROJECT_ITEMS: IProject[] = [
   {
     description:
       "A software company, building products that contribute to society.",
-    title: "Nobasi Softwares",
+    title: "Nobasi Software",
     tools: ["next", "react", "tailwindcss", "typescript", "radix_ui"],
     url: "https://nobasisoftwares.vercel.app",
     id: "nsjbdkvhbe7833682hbahkb39",
   },
   {
-    description: "A collection of simple tools for everyday tasks.",
-    title: "Tooolsio",
+    description: "Generate tokens for your design system.",
+    title: "Yoteeei",
     tools: [
       "next",
       "react",
       "tailwindcss",
       "typescript",
-      "supabase",
       "radix_ui",
     ],
-    url: "https://tooolsio.vercel.app",
+    url: "https://yoteeei.vercel.app",
     id: "kvbvhb873873jbhbki372982",
   },
 ];
