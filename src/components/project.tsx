@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { type Project as IProject } from "@/types/globals";
 import {
@@ -11,9 +9,14 @@ import {
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRightIcon } from "lucide-react";
-import { useIsMobile } from "@/hooks/use-is-mobile";
 import { cn } from "@/lib/cn";
-
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { focusRing } from "@/lib/focuses";
 const PROJECT_ITEMS: IProject[] = [
   {
     description:
@@ -50,17 +53,11 @@ export const Projects: React.FC = () => (
 );
 
 export const Project: React.FC<{ data: IProject }> = ({ data }) => {
-  const matches = useIsMobile();
-
   return (
     <Card className="relative transition-shadow duration-200 shadow-none">
-      <CardHeader
-        className={cn("border-b-2 border-dashed dark:border-input", {
-          "group/title": !matches,
-        })}
-      >
+      <CardHeader className={cn("border-b-2 border-dashed dark:border-input")}>
         <div className="flex flex-row items-center justify-between">
-          <h3 className="text-2xl font-bold tracking-normal uppercase select-none font-geist-mono line-clamp-1 ">
+          <h3 className="text-2xl font-bold tracking-normal uppercase select-none font-geist-mono line-clamp-1">
             {data.title}
           </h3>
           <Button
@@ -74,13 +71,6 @@ export const Project: React.FC<{ data: IProject }> = ({ data }) => {
             </Link>
           </Button>
         </div>
-        {!matches ? (
-          <div className="absolute top-0 left-0 flex items-start w-full px-4 pt-1 pb-4 transition-transform duration-200 border-2 border-dashed rounded-t-lg text-muted-foreground bg-muted dark:border-input -z-10 group-hover/title:-translate-y-10">
-            <div className="text-base font-medium no-uppercase">
-              {data.title}
-            </div>
-          </div>
-        ) : null}
       </CardHeader>
       <CardContent>
         <div className="pt-6">
