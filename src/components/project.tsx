@@ -1,5 +1,5 @@
 import React from "react";
-import { type Project as IProject } from "@/types/globals";
+import { type Project as IProject } from "@/types/shared";
 import {
   Card,
   CardContent,

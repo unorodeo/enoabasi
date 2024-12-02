@@ -1,4 +1,4 @@
-import { Experience as ExperienceType } from "@/types/globals";
+import { Experience as ExperienceType } from "@/types/shared";
 import React from "react";
 
 interface ExperienceItem extends ExperienceType {
