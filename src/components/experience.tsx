@@ -12,7 +12,7 @@ const EXPERIENCE_ITEMS: ExperienceItem[] = [
     position: "Founder",
     company: "Nobasi Software",
     description:
-      "Started a company to build softwares that contributed to society. Developing solutions for public and private administrations using advanced technologies and best practices.",
+      "Started a company to build software that contributes to society. Developing solutions for public and private administrations using advanced technologies and best practices.",
   },
   {
     id: "7d4abfd6-28f0-4fdc-a881-df8c2aa37a7a",
@@ -20,7 +20,7 @@ const EXPERIENCE_ITEMS: ExperienceItem[] = [
     position: "Software developer intern",
     company: "Ice Queen Spa",
     description:
-      "My role as a software developer was to help them manage/maintain an exsiting website for their business. implement internal tools that helped with booking, managing, and scheduling customer appointments.",
+      "My role as a software developer was to help manage/maintain their exsiting website for their SPA business, implement internal tools that helped with booking, managing, and scheduling customer appointments.",
   },
 ];
 
@@ -48,7 +48,7 @@ export const Experience: React.FC<ExperienceType> = ({
 }) => {
   return (
     <li className="mb-10 ms-4">
-      <div className="absolute size-3 bg-muted rounded-full mt-1.5 -start-1.5 border border-muted"></div>
+      <div className="absolute size-3 bg-muted rounded-full mt-1.5 -start-1.5 border-2 border-border"></div>
       <time className="mb-1 text-sm font-normal leading-none text-muted-foreground font-geist-mono">
         {period}
       </time>
