@@ -2,16 +2,16 @@
 
 --primary: 221.2 83.2% 53.3%;
 --primary-foreground: 210 40% 98%;
---secondary: 210 40% 96.1%;
---secondary-foreground: 222.2 47.4% 11.2%;
---tertiary: 262.1 83.3% 57.8%;
---tertiary-foreground: 210 20% 98%;
+--secondary: 0 0% 90.98%;
+--secondary-foreground: 0 0% 12.55%;
+--tertiary: 240 5.9% 10%;
+--tertiary-foreground: 0 0% 98%;
 
 <!-- dark -->
 
 --primary: 217.2 91.2% 59.8%;
 --primary-foreground: 222.2 47.4% 11.2%;
---secondary: 217.2 32.6% 17.5%;
---secondary-foreground: 210 40% 98%;
---tertiary: 263.4 70% 50.4%;
---tertiary-foreground: 210 20% 98%;
+--secondary: 0 0% 16.47%;
+--secondary-foreground: 0 0% 93.33%;
+--tertiary: 0 0% 98%;
+--tertiary-foreground: 240 5.9% 10%;
