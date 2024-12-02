@@ -54,16 +54,23 @@ export const Project: React.FC<{ data: IProject }> = ({ data }) => {
           <h3 className="text-2xl font-bold tracking-normal uppercase select-none font-geist-mono line-clamp-1">
             {data.title}
           </h3>
-          <Button
-            variant={"secondary"}
-            size={"icon-lg"}
-            className="rounded-full"
-            asChild
-          >
-            <Link href={`${data.url}?ref=portfolio`} target="_blank">
-              <ArrowUpRightIcon />
-            </Link>
-          </Button>
+          <TooltipProvider delayDuration={0}>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link
+                  href={data.url}
+                  target="_blank"
+                  className={cn("rounded-full", focusRing)}
+                >
+                  <ArrowUpRightIcon />
+                  <span className="sr-only">visit project live</span>
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Visit &mdash; {data.title}</span>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </div>
       </CardHeader>
       <CardContent>
