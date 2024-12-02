@@ -14,7 +14,7 @@ export const Brand: React.FC<{
 			<Link
 				href={href ?? "/"}
 				className={cn(
-					"rounded-lg p-1 select-none text-2xl font-bold tracking-tight font-calistoga inline-flex items-center gap-1 [&_svg]:shrink-0 whitespace-nowrap justify-center",
+					"rounded-lg p-1 select-none text-2xl font-bold tracking-tight inline-flex items-center gap-1 [&_svg]:shrink-0 whitespace-nowrap justify-center",
 					focusRing
 				)}
 			>
@@ -33,7 +33,7 @@ export const Brand: React.FC<{
 	}
 	if (variant === "div") {
 		return (
-			<div className="p-1 text-2xl font-bold tracking-tight select-none font-calistoga">
+			<div className="p-1 text-2xl font-bold tracking-tight select-none">
 				{siteConfig.name.fn}
 			</div>
 		);
