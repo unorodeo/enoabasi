@@ -47,7 +47,7 @@ export const Projects: React.FC = () => (
 
 export const Project: React.FC<{ data: IProject }> = ({ data }) => {
   return (
-    <Card className="relative transition-shadow duration-200 shadow-none">
+    <Card className="relative transition-shadow duration-200 shadow-none hover:ring-4 hover:ring-offset-background hover:ring-offset-4 hover:ring-ring">
       <CardHeader className={cn("border-b-2 border-dashed dark:border-input")}>
         <div className="flex flex-row items-center justify-between">
           <h3 className="text-2xl font-bold tracking-normal uppercase select-none font-geist-mono line-clamp-1">
