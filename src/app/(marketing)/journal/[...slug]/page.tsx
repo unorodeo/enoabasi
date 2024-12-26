@@ -1,10 +1,5 @@
-import { buttonVariants } from "@/components/ui/button";
 import { DocsDescription, DocsTitle } from "fumadocs-ui/page";
-import { MoveLeftIcon } from "lucide-react";
-
-import Link from "next/link";
 import { Section } from "@/components/ui/section";
-import { cn } from "@/lib/cn";
 import defaultMdxComponents from "fumadocs-ui/mdx";
 import { journalSource } from "@/source";
 import { notFound } from "next/navigation";
@@ -14,7 +9,6 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
-  BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Icons } from "@/components/ui/icons";
