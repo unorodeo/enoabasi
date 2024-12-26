@@ -1,12 +1,12 @@
 export const siteConfig = {
 	url: "https://enoabasi.vercel.app",
-	name: { fn: "AABEINOS", ln: "EEINSS" },
-	author: "Enoabasi",
+	name: { fn: "Enoabasi", ln: "Essien" },
+	author: "Enoabasi Essien",
 	socials: {
-		instagram: "https://",
-		tiktok: "https://",
-		twitter: "https://",
-		linkedin: "https://",
+		instagram: "https://instagram.com/unorodeo",
+		tiktok: "https://tiktok.com/unorodeo",
+		twitter: "https://x.com/unorodeo",
+		linkedin: "https://linkedin.com/unorodeo",
 		email: "mailto:humanwhodreams@gmail.com",
 	},
 };

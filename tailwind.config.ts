@@ -14,7 +14,6 @@ const config: Config = {
       fontFamily: {
         "geist-sans": "var(--font-geist-sans)",
         "geist-mono": "var(--font-geist-mono)",
-        calistoga: "var(--font-calistoga)",
       },
       borderRadius: {
         lg: "var(--radius)",
