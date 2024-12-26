@@ -4,14 +4,10 @@ import defaultMdxComponents from "fumadocs-ui/mdx";
 import { journalSource } from "@/source";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Icons } from "@/components/ui/icons";
+import { JounralCrumbs } from "@/components/journal-crumbs";
+import { Highlight } from "@/components/mdx";
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { HR } from "@/components/ui/hr";
 
 interface Props {
   params: {
@@ -26,27 +22,18 @@ export default async function Article(props: Props) {
   const MDX = page.data.body;
 
   return (
-    <Section className="border-x-2 border-dashed">
+    <Section>
       <div className="mb-8">
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/journal">
-                <Icons.RemixHomeIcon className="size-5" />
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbLink href={page.url}>{page.data.title}</BreadcrumbLink>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
+        <JounralCrumbs
+          href={page.url}
+          title={page.data.title}
+        />
       </div>
       <DocsTitle>{page.data.title}</DocsTitle>
       {page.data.description ? (
         <DocsDescription>{page.data.description}</DocsDescription>
       ) : null}
-      <MDX components={{ ...defaultMdxComponents }} />
+      <MDX components={{ ...defaultMdxComponents, Highlight, Tab, Tabs, HR }} />
     </Section>
   );
 }

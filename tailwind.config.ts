@@ -1,13 +1,19 @@
 import type { Config } from "tailwindcss";
+import { createPreset } from 'fumadocs-ui/tailwind-plugin';
 
 const config: Config = {
   darkMode: ["class"],
+  presets: [createPreset({
+    preset : "catppuccin"
+  })],
   content: [
+    "./node_modules/fumadocs-ui/dist/**/*.js",
+    
     "./src/lib/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./content/**/*.{js,ts,jsx,tsx,mdx}",
 
-    "./node_modules/fumadocs-ui/dist/**/*.js",
   ],
   theme: {
     extend: {

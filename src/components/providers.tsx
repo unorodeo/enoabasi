@@ -7,14 +7,16 @@ export const Providers: React.FC<{ children: React.ReactNode }> = ({
 }) => {
   return (
     <>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        <RootProvider>{children}</RootProvider>
-      </ThemeProvider>
+      <RootProvider theme={{ enabled: false }}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </RootProvider>
     </>
   );
 };
