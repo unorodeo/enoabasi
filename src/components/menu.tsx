@@ -6,8 +6,6 @@ import { HEADER_NAVS } from "@/utils/navigations";
 import Link from "next/link";
 import { MenuIcon } from "lucide-react";
 import React from "react";
-import { Separator } from "@/components/ui/separator";
-import { ThemeBtn } from "@/components/theme-btn";
 import { cn } from "@/lib/cn";
 import { useIsMobile } from "@/hooks/use-is-mobile";
 
@@ -40,8 +38,6 @@ export const Menu: React.FC = () => {
 							{hn.label}
 						</Link>
 					))}
-					<Separator className="h-6 w-[2px]" />
-					<ThemeBtn />
 				</menu>
 			)}
 		</>

@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 
-import { calistoga, geistMono, geistSans } from "@/lib/fonts";
+import { geistMono, geistSans } from "@/lib/fonts";
 
 import type { Metadata } from "next";
 import { Providers } from "@/components/providers";
@@ -23,11 +23,10 @@ export default function RootLayout({
     >
       <body
         className={cn(
-          "relative antialiased font-geist-sans",
+          "dark relative antialiased font-geist-sans",
           "selection:bg-tertiary selection:text-tertiary-foreground",
           geistSans.variable,
           geistMono.variable,
-          calistoga.variable
         )}
       >
         <Providers>{children}</Providers>

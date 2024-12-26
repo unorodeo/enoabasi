@@ -11,7 +11,7 @@ export const JournalLink: React.FC<{
   date: string;
 }> = (props) => {
   return (
-    <div className="flex items-center justify-between py-2 rounded-lg hover:bg-muted dark:hover:bg-muted/40 md:px-4">
+    <div className="flex flex-col md:flex-row items-start md:items-center justify-between py-2 rounded-lg hover:bg-muted dark:hover:bg-muted/40 md:px-4">
       <Link
         href={props.href}
         className={cn(
@@ -23,7 +23,7 @@ export const JournalLink: React.FC<{
       </Link>
       <time
         dateTime={props.date}
-        className="text-muted-foreground"
+        className="text-muted-foreground px-4 ms-2 md:ms-0 md:px-0 text-sm md:text-base"
       >
         {formatDate(props.date)}
       </time>

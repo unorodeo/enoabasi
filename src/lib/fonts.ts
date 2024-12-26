@@ -1,4 +1,3 @@
-import { Calistoga } from "next/font/google";
 import localFont from "next/font/local";
 
 export const geistSans = localFont({
@@ -13,9 +12,3 @@ export const geistMono = localFont({
 	weight: "100 900",
 });
 
-export const calistoga = Calistoga({
-	weight: "400",
-	subsets: ["latin"],
-	display: "swap",
-	variable: '--font-calistoga'
-});
