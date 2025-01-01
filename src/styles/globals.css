@@ -65,7 +65,7 @@
   }
 
   code {
-    @apply font-geist-mono text-sm text-foreground font-medium border-2 p-1 rounded bg-muted/60;
+    @apply font-geist-mono;
   }
 
   h1 {
