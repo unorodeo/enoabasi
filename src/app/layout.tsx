@@ -7,7 +7,7 @@ import { Providers } from "@/components/providers";
 import { cn } from "@/lib/cn";
 
 export const metadata: Metadata = {
-  title: "Enoabasi | The playground of Enoabasi Essien.",
+  title: { default: "Enoabasi", template: "%s | Enoabasi" },
   description: "The playground of Enoabasi Essien.",
 };
 
@@ -23,10 +23,14 @@ export default function RootLayout({
     >
       <body
         className={cn(
-          "dark relative antialiased font-geist-sans",
+          "relative antialiased font-geist-sans",
           "selection:bg-tertiary selection:text-tertiary-foreground",
+          "[&::-webkit-scrollbar]:w-2",
+          "[&::-webkit-scrollbar-track]:bg-background",
+          "[&::-webkit-scrollbar-thumb]:bg-muted",
+          "[&::-webkit-scrollbar-thumb]:rounded-full",
           geistSans.variable,
-          geistMono.variable,
+          geistMono.variable
         )}
       >
         <Providers>{children}</Providers>
@@ -34,4 +38,3 @@ export default function RootLayout({
     </html>
   );
 }
-

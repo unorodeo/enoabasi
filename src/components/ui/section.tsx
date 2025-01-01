@@ -8,7 +8,7 @@ export const Section: React.FC<
 		<section
 			ref={ref}
 			className={cn(
-				"max-w-5xl mx-auto py-6 md:py-12 px-4 md:px-8",
+				"max-w-[662px] mx-auto py-6 md:py-12 px-4 md:px-8 lg:[&_p]:text-xl",
 				{
 					"max-w-full py-4 md:py-6": bleed,
 				},

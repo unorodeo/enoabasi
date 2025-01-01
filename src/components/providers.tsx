@@ -8,9 +8,8 @@ export const Providers: React.FC<{ children: React.ReactNode }> = ({
     <>
       <ThemeProvider
         attribute="class"
-        defaultTheme="system"
+        defaultTheme="dark"
         enableSystem
-        disableTransitionOnChange
       >
         {children}
       </ThemeProvider>

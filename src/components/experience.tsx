@@ -3,6 +3,7 @@ import React from "react";
 
 interface ExperienceItem extends ExperienceType {
   id: string;
+  index?: number;
 }
 
 const EXPERIENCE_ITEMS: ExperienceItem[] = [
@@ -11,8 +12,7 @@ const EXPERIENCE_ITEMS: ExperienceItem[] = [
     period: "2022 - Present",
     position: "Founder",
     company: "Nobasi Software",
-    description:
-      "Started a company to build software that contributes to society. Developing solutions for public and private administrations using advanced technologies and best practices.",
+    description: "Developing solutions for public and private administrations.",
   },
   {
     id: "7d4abfd6-28f0-4fdc-a881-df8c2aa37a7a",
@@ -20,7 +20,7 @@ const EXPERIENCE_ITEMS: ExperienceItem[] = [
     position: "Software developer intern",
     company: "Ice Queen Spa",
     description:
-      "My role as a software developer was to help manage/maintain their exsiting website for their SPA business, implement internal tools that helped with booking, managing, and scheduling customer appointments.",
+      "Maintained the exsiting website for their SPA business, implement internal tools that helped with scheduling, inventory management, and customer management.",
   },
 ];
 
@@ -54,7 +54,7 @@ export const Experience: React.FC<ExperienceType> = ({
       </time>
       <h3 className="text-lg font-semibold tracking-normal">{position}</h3>
       <small className="muted">{company}</small>
-      <p className="[&:not(:first-child)]:mt-0 mb-4 text-base font-normal text-foreground">
+      <p className="[&:not(:first-child)]:mt-0 mb-4 font-normal text-foreground">
         {description}
       </p>
     </li>
