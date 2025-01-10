@@ -21,7 +21,7 @@ export default function Home() {
 function Hero() {
   return (
     <Section>
-      <p>I am a software developer and maker with +3 years of experience.</p>
+      <p>I am a software developer and maker with +5 years of experience.</p>
       <p>
         My journey spans crafting software that is not only profitable but
         contributes to society. I use software as a means of solving problems in
